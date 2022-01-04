@@ -53,9 +53,7 @@
 
 :zap: Github Stats
 
-<img align="left" alt="AguzzTN54 Github Stats" src="https://github-readme-stats.vercel.app/api?username=AguzzTN54&show_icons=true&hide_border=true" />
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aguzztn54&layout=compact&langs_count=8&hide=pascal,visual+basic+.net,hack)](https://github.com/anuraghazra/github-readme-stats)
+<img align="left" width="55%" alt="AguzzTN54 Github Stats" src="https://github-readme-stats.vercel.app/api?username=AguzzTN54&show_icons=true&hide_border=true" /><img align="right" width="40%" alt="AguzzTN54 Github Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aguzztn54&layout=compact&langs_count=8&hide=pascal,visual+basic+.net,hack" />
 
 [website]: https://github.com/AguzzTN54
 [facebook]: https://www.facebook.com/agustinus.yohannesnang
