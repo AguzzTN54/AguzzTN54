@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Bodymovin Demo</title>
+
+  <!--  Styles  -->
+  <style>
+    .bodymovin-wrapper-1 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .bodymovin-1 {
+      width: 100%;
+      height: 100%;
+      background-color: #fafafa;
+    }
+  </style>
+
+  <!-- Scripts -->
+  <script src="js/lottie.js"></script>
+</head>
+
+<body>
+  <div class="bodymovin-wrapper-1">
+    <div class="bodymovin-1"></div>
+  </div>
+
+  ‍<script>
+    var loader = document.getElementsByClassName("bodymovin-1");
+
+    function loadBMAnimation(loader) {
+      var animation = bodymovin.loadAnimation({
+        container: loader,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "json/kantor.json"
+      });
+    }
+    for (var i = 0; i < loader.length; i++) {
+      loadBMAnimation(loader[i]);
+    }
+  </script>
+</body>
+
+</html>
