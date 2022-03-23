@@ -1,0 +1,1081 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #821A71;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    line-height: normal;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+}
+
+.load {
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translateY(-50%);
+}
+
+.load img {
+    width: 200px;
+}
+
+.load p {
+    font-size: larger;
+    margin-top: -2em;
+}
+
+
+
+/* SVG */
+.fil0,
+.fil01 {
+    fill: #fff;
+}
+
+.fil01a {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: linear muter 10s infinite;
+}
+
+.fil1 {
+    fill: #000;
+    fill-rule: nonzero
+}
+
+.fil2,
+.header-scrolled .fil01,
+.fil01b {
+    fill: rgb(245, 204, 20)
+}
+
+.header-scrolled .fil0,
+.fil0a {
+    fill: url(#id0);
+}
+
+/* Akhir SVG */
+
+/* Lottie */
+.kantor,
+.agus1,
+.agus2,
+.agus3 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Akhir Lottie */
+
+/* MEDSOS */
+.social a {
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    border: 2px #fff solid;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.social a:hover {
+    color: #fff;
+    border-color: transparent;
+    transition: all ease-in-out 0.5s;
+}
+
+.social1 {
+    bottom: 20px;
+    right: 30px;
+}
+
+.social1 a {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 2px;
+}
+
+.facebook:hover {
+    border-color: #3b5999;
+    background-color: #3b5999;
+}
+
+.whatsapp:hover {
+    border-color: #25D366;
+    background-color: #25D366;
+}
+
+.instagram:hover {
+    border-color: #e4405f;
+    background-color: #e4405f;
+}
+
+.twitter:hover {
+    border-color: #55acee;
+    background-color: #55acee;
+}
+
+.youtube:hover {
+    border-color: #cd201f;
+    background-color: #cd201f;
+}
+
+/* Akhir Medsos */
+
+
+/* Navabar */
+.navbar {
+    z-index: 10;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.header-scrolled {
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+
+.header-scrolled .text-white {
+    color: rgb(63, 63, 63) !important;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    margin-bottom: -1px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .active::after {
+    content: '';
+    display: block;
+    border: 1px #FFC01F solid;
+    width: 60%;
+    margin: auto;
+    animation: navbar 0.3s;
+}
+
+.bubble {
+    background-color: #f81717;
+    color: #fff;
+    padding: 5px;
+    font-size: smaller;
+    margin-left: -5px;
+    border-radius: 100%;
+}
+
+/* Mobile Navigation */
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 12;
+    overflow-y: auto;
+    left: -260px;
+    width: 260px;
+    padding-top: 18px;
+    padding-left: 10px;
+    background: rgba(70, 38, 69, 0.8);
+    transition: 0.4s;
+}
+
+.mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav a {
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
+    color: #8dc2fa;
+    text-decoration: none;
+}
+
+.mobile-nav .drop-down>a:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+}
+
+.mobile-nav .active.drop-down>a:after {
+    content: "\f077";
+}
+
+
+
+.mobile-nav-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 11;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.mobile-nav-toggle i {
+    margin: 18px 18px 0 0;
+    color: #301538;
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(58, 24, 73, 0.8);
+    overflow: hidden;
+    display: none;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+    left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+    color: #fff;
+}
+
+
+/* Akhir Navbar */
+
+
+/* Banner */
+.admin-login {
+    min-height: 100vh;
+    background-image: url(../images/Modern-Workspace-Design-Ideas-8.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.admin-login::after {
+    content: '';
+    background-color: rgba(44, 4, 41, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.admin-login .container {
+    position: relative;
+    display: block;
+    z-index: 2;
+    padding: 75px 50px 10px;
+    text-align: center;
+}
+
+.admin-login .container .bg-white {
+    border-radius: 10px;
+}
+
+.landing-banner,
+.banner {
+    position: relative;
+    z-index: 0;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.landing-banner {
+    height: 100vh;
+}
+
+.banner {
+    height: 200px;
+    margin-top: 5em;
+    background-size: 700px;
+    background-position: left;
+}
+
+.graphic-banner {
+    background: url(../images/Modern-Workspace-Design-Ideas-8.jpeg) no-repeat;
+}
+
+.web-banner {
+    background: url(../images/pexels-photo-3.jpg) no-repeat;
+}
+
+.banner .wave {
+    background-position: 0 290px;
+    margin-right: -4em;
+    border-bottom: 3px #821A71 solid;
+}
+
+.landing-banner::after,
+.banner::after {
+    content: '';
+    background-color: #821A71;
+    opacity: 0.2;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#slider {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+
+.svg {
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-logo {
+    top: 0;
+    left: 0;
+    content: url(../svg/background-logo.svg);
+    width: 350px;
+    animation: linear bg-logo 12s infinite;
+}
+
+.sun {
+    z-index: 2 !important;
+    content: url(../svg/matahari.svg);
+    top: -6em;
+    right: -4em;
+    width: 200px;
+    animation: linear sun 10s infinite;
+}
+
+.manuk {
+    content: url(../svg/manuk.svg);
+    right: 30%;
+    top: 4em;
+    width: 70px;
+    animation: linear manuk 5s infinite;
+}
+
+.wave {
+    background-image: url(../svg/wave0.svg);
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+}
+
+.wave1 {
+    animation: linear wave1 15s infinite;
+}
+
+.waveset {
+    right: 0;
+    bottom: 0;
+}
+
+.wave2 {
+    right: 3em;
+    opacity: 0.4;
+    animation: linear wave2 16s infinite;
+}
+
+.wave3 {
+    content: url(../svg/wave1.svg);
+    height: 100%;
+    animation: linear wave4 16s infinite;
+}
+
+.wave4 {
+    content: url(../svg/wave2.svg);
+    height: 75%;
+    animation: linear wave4 15s infinite;
+}
+
+.wave5 {
+    content: url(../svg/wave3.svg);
+    height: 35%;
+    animation: linear wave3 18s infinite;
+}
+
+.wave6 {
+    content: url(../svg/wave4.svg);
+    width: 37%;
+    animation: linear wave5 17s infinite;
+}
+
+.tanduran1 {
+    z-index: 2;
+    right: 20em;
+    bottom: -3.5em;
+    width: 100px;
+    transform: rotate(-30deg);
+}
+
+.tanduran1,
+.gd {
+    position: absolute;
+}
+
+.tanduran2 {
+    position: relative;
+    width: 150px;
+    transform: rotate(32deg);
+    margin-top: 5em;
+    margin-left: -12em;
+}
+
+.tanduran3 {
+    width: 200px;
+    transform: rotate(30deg);
+    margin-left: -2em;
+}
+
+.gd {
+    width: 100%;
+    transform-origin: bottom;
+}
+
+.godong1,
+.godong3 {
+    content: url(../svg/godong1.svg);
+}
+
+.godong1 {
+    right: 30%;
+    bottom: 2em;
+    animation: linear godong1 19s infinite;
+}
+
+.godong2 {
+    content: url(../svg/godong2.svg);
+    transform: rotate(-7deg);
+    bottom: 0;
+    right: 70%;
+    animation: linear godong2 23s infinite;
+}
+
+.godong3 {
+    transform: rotate(20deg);
+    bottom: 0;
+    right: 30%;
+    animation: linear godong1 31s infinite;
+}
+
+.svg,
+.tanduran {
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.text-banner {
+    position: relative;
+    z-index: 3;
+}
+
+.tengah {
+    position: absolute;
+    transform: translateY(50%);
+    top: 0;
+    left: 70px;
+    text-align: center;
+}
+
+.kanan {
+    position: absolute;
+    transform: translateY(25%);
+    top: -50%;
+    left: 70px;
+    text-align: right;
+}
+
+.landing {
+    text-transform: uppercase;
+    color: #691291;
+    font-size: 3.3em;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.tengah span {
+    font-size: x-large;
+}
+
+/* Akhir Banner */
+
+/* BTN */
+.btn1 {
+    margin-top: 1em;
+    padding: 15px 30px;
+    background-image: linear-gradient(90deg, #cc366a, #691291, #cc366a);
+    background-size: 200%;
+    border-radius: 30px;
+    color: #fff;
+    transition: all ease-in-out 0.7s;
+}
+
+.btn1:hover {
+    color: #fff;
+    background-position: 200px;
+}
+
+.btn2 {
+    font-weight: 600;
+    margin: 1em;
+    padding: 10px 25px;
+    border: 3px solid #691291;
+    border-radius: 30px;
+    color: #691291;
+}
+
+.btn3 {
+    font-size: small;
+    margin: 0.5em;
+    padding: 5px 15px;
+    border: 1.5px solid #691291;
+    border-radius: 30px;
+    color: #691291;
+}
+
+.btn2:hover,
+.btn3:hover {
+    border-color: transparent;
+    background-color: #691291;
+    color: #fff;
+    transition: all ease-in-out 1s;
+}
+
+
+/* Akhir BTN */
+
+/* SUB */
+.sub1 {
+    font-weight: 600;
+    font-size: 2em;
+    line-height: normal;
+}
+
+.sub {
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sub::before,
+.sub-center::after {
+    content: '';
+    display: inline-block;
+    background-color: #691291;
+    width: 2em;
+    height: 1.5px;
+    margin: auto 6px 9px;
+}
+
+.sub-center {
+    text-align: center;
+}
+
+/* SUB */
+
+/* Kilasan */
+.mt10em {
+    margin-top: -4em;
+}
+
+.kilasan {
+    font-size: large;
+}
+
+.counters {
+    padding-top: 40px;
+    background-color: #f9f9f9;
+}
+
+.counters span {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: #423f63;
+}
+
+.counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #514e7a;
+
+}
+
+/* Call to Action */
+#call-to-action {
+    background: #510a72;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+#call-to-action .cta-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#call-to-action .cta-text {
+    color: #fff;
+}
+
+#call-to-action .cta-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 26px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+    background: #821A71;
+    border: 3px solid #821A71;
+}
+
+/* Akhir Call to Action */
+
+
+/* Pembayaran */
+.pembayaran {
+    background-color: #f9f9f9;
+}
+
+#clients {
+    padding: 60px 0;
+}
+
+#clients img {
+    max-width: 70%;
+    opacity: 0.5;
+    transition: 0.3s;
+    padding: 15px 0;
+}
+
+#clients img:hover {
+    opacity: 1;
+}
+
+#clients .owl-nav,
+#clients .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#clients .owl-dot {
+    display: inline-block;
+    margin: 0 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+#clients .owl-dot.active {
+    background-color: #821A71;
+}
+
+/* Akhir Pembayaran */
+
+/* FAQ */
+#faq {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+#faq #faq-list {
+    padding: 0;
+    list-style: none;
+}
+
+#faq #faq-list li {
+    border-bottom: 1px solid #ebebeb;
+}
+
+#faq #faq-list a {
+    padding: 22px 0;
+    display: block;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+#faq #faq-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+#faq #faq-list p {
+    margin-bottom: 20px;
+}
+
+#faq #faq-list a.collapse {
+    color: #691291;
+}
+
+#faq #faq-list a.collapsed {
+    color: #000;
+}
+
+#faq #faq-list a.collapsed i::before {
+    content: "\f067" !important;
+}
+
+/* Akhir FAQ */
+
+/* Produk */
+.thumb {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card img {
+    min-height: 100%;
+
+}
+
+.produk .card {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.produk .card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.loader {
+    display: none;
+    border-radius: 100%;
+    width: 17px;
+    height: 17px;
+    background-color: #000;
+    background-image: linear-gradient(90deg, #cccccc, rgb(82, 7, 85));
+    animation: linear loader 1s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(350deg);
+    }
+}
+
+.produkDipilih {
+    max-width: 100%;
+    background-color: rgba(46, 74, 138, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.namaTerpilih {
+    display: inline-block;
+    color: rgb(75, 17, 65);
+    font-weight: 600;
+}
+
+/* Akhir Produk */
+
+/* pesan */
+.list-pesan {
+    margin: 0;
+    border-bottom: rgba(44, 4, 41, 0.6) 1px solid;
+    border-top: rgba(44, 4, 41, 0.6) 1px solid;
+}
+
+.picPesan {
+    width: 100px;
+    display: inline-block;
+}
+
+.check {
+    font-size: 10em;
+    line-height: 50px;
+    color: #25D366;
+}
+
+.times {
+    font-size: 10em;
+    line-height: 50px;
+    color: #cd201f;
+}
+
+/* akhir Pesan */
+
+/* Footer */
+footer {
+    position: relative;
+    background: url(../svg/footer.svg);
+    background-position: top;
+    background-size: cover;
+    text-align: right;
+    margin-left: -5px;
+    overflow: hidden;
+    padding: 50px;
+    line-height: 1.5em;
+    font-size: larger;
+}
+
+footer .tanduran3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer .container {
+    margin-right: 10px;
+}
+
+.foot {
+    position: absolute;
+    left: 0;
+    bottom: -6.7em;
+}
+
+.footer {
+    height: 100%x;
+    position: relative;
+
+}
+
+.getintouch {
+    margin: 10px 0 20px;
+}
+
+.getintouch .sub1 {
+    margin: 10px 0;
+}
+
+.madeby {
+    position: relative;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    font-size: large;
+    color: #fff;
+    opacity: 0.8;
+    margin: 10px 0;
+}
+
+
+.fa-heart {
+    color: #e4405f;
+    font-size: larger;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #691291;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.back-to-top:hover {
+    background-color: #cc366a;
+}
+
+.back-to-top i {
+    padding-top: 15px;
+    color: #fff;
+}
+
+/* Akhir Footer */
+
+
+/* Display HP */
+@media (max-width: 575.98px) {
+    .load {
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%);
+        font-size: small;
+    }
+
+    .social1 a {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin: 0 1px;
+        font-size: small;
+    }
+
+    /* Banner */
+    .bg-logo {
+        width: 60%;
+    }
+
+    .sun {
+        width: 40%;
+        top: -4em;
+        right: -3em;
+    }
+
+    .landing-banner .wave {
+        bottom: -9em;
+        left: -17em;
+        width: 240%;
+        transform: rotate(70deg) !important;
+    }
+
+    .banner {
+        height: 180px;
+        background-size: 500px;
+    }
+
+    .banner .wave {
+        background-position-y: bottom;
+        background-position-x: left;
+        background-size: 1500px;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .landing-banner .wave2 {
+        bottom: -8em;
+        left: -19em;
+    }
+
+    .wave3,
+    .wave4,
+    .wave5 {
+        display: none;
+    }
+
+    .wave6 {
+        width: 70%;
+    }
+
+    #slider {
+        width: 100%;
+    }
+
+    .tengah {
+        top: 5em;
+        right: 20px;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .tengah span {
+        font-size: large;
+    }
+
+    .kanan {
+        margin-right: 10px;
+    }
+
+    .landing {
+        padding-left: 20%;
+        font-size: 40px;
+    }
+
+    .m-none,
+    .tanduran1 {
+        display: none;
+    }
+
+    .tanduran3 {
+        width: 100px;
+        margin-top: -11em;
+        transform: rotate(15deg)
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+}
